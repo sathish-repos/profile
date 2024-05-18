@@ -1,0 +1,1 @@
+import{Aa as s,R as o,ua as a,va as i,ya as r}from"./chunk-NZTZWSJS.js";var c=(()=>{let e=class e{};e.\u0275fac=function(n){return new(n||e)},e.\u0275cmp=o({type:e,selectors:[["skp-page-not-found"]],standalone:!0,features:[s],decls:2,vars:0,template:function(n,d){n&1&&(a(0,"p"),r(1,"page-not-found works!"),i())}});let t=e;return t})();export{c as default};
