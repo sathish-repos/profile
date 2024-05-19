@@ -10,11 +10,12 @@ import { CdkCopyToClipboard } from '@angular/cdk/clipboard';
 })
 export class ContactComponent {
   email: string = 'me.sathish.git@gmail.com';
+  phoneNo: string = '6380891338';
 
-  async onCopy() {
-    await setInterval(() => {
+  onCopy() {
+    setInterval(() => {
       this.email = 'me.sathish.git@gmail.com';
-    }, 800);
-    this.email = 'Email Copied !!';
+    }, 1000);
+    this.email = 'Copied !!';
   }
 }

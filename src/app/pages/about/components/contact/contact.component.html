@@ -5,6 +5,9 @@
     Currently seeking new opportunities.
   </p>
   <p [cdkCopyToClipboard]="'me.sathish.git@gmail.com'" (click)="onCopy()">
-    {{ email }}
+    {{ email }} <img src="assets/clipboard.svg" />
   </p>
+  <a href="tel:{{ phoneNo }}"
+    >Ph No.: {{ phoneNo }} <img src="assets/smartphone.svg"
+  /></a>
 </div>
