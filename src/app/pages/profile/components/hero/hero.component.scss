@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  min-height: 60vh;
+}
+
+h1 {
+  font-size: 4.6vw;
+  font-size: 4.5rem;
+  line-height: 120%;
+  font-weight: 600;
+}
+
+h2 {
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  line-height: 120%;
+  font-weight: 400;
+}
