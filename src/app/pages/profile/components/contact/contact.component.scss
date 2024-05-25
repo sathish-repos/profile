@@ -1,0 +1,28 @@
+.card {
+  padding: 1rem;
+  margin: 1rem;
+  border: 0.125rem solid rgb(210, 210, 210);
+  border-radius: 0.5rem;
+  max-width: 500px;
+}
+
+.field {
+  width: fit-content;
+  &_name,
+  &_email,
+  &_message {
+    padding: 1rem;
+
+    label {
+      display: block;
+      margin-bottom: 3px;
+    }
+    input {
+      padding: 0.8rem;
+      border: 0.1rem solid rgb(120, 120, 120);
+      border-radius: 0.5rem;
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
+}
