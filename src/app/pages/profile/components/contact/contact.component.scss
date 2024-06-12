@@ -3,11 +3,11 @@
   margin: 1rem;
   border: 0.125rem solid rgb(210, 210, 210);
   border-radius: 0.5rem;
-  max-width: 500px;
+  max-width: 700px;
 }
 
 .field {
-  width: fit-content;
+  width: 100%;
   &_name,
   &_email,
   &_message,

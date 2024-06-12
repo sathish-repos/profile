@@ -1,7 +1,7 @@
 <div class="card">
   <h1>Let's get to know 😎</h1>
-  <form [formGroup]="contactForm" (ngSubmit)="onFormSubmit()">
-    <div class="field">
+  <form class="field" [formGroup]="contactForm" (ngSubmit)="onFormSubmit()">
+    <div>
       <div class="field_name">
         <label for="name">Name</label>
         <input type="text" [formControlName]="'name'" name="name" id="name" />
