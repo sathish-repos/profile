@@ -1,7 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
-@import "./app/shared/styles/themes.scss";
-@import "./app/shared/styles/variables.scss";
 @import "./app/shared/styles/fonts.scss";
+
+:root {
+  --text: #000000;
+  --background: #ffffff;
+
+  body.dark-theme {
+    color-scheme: dark;
+
+    --text: #ffffff;
+    --background: #000000;
+  }
+}
 
 * {
   margin: 0;
