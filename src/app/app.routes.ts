@@ -4,9 +4,10 @@ import { ProfileComponent } from './pages/profile/profile.component';
 export const routes: Routes = [
   {
     path: 'about',
+    title: 'About',
     loadComponent: () => import('./pages/about/about.component'),
   },
-  { path: '', component: ProfileComponent },
+  { path: '', title: 'Profile', component: ProfileComponent },
   {
     path: '**',
     loadComponent: () =>
