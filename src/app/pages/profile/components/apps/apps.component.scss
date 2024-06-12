@@ -1,6 +1,39 @@
 .all__apps {
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
 }
+
+.app {
+  margin-bottom: 5rem;
+}
+
+.img-wrapper {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.img-wrapper img {
+  width: 500px;
+  height: 100%;
+}
+
+.inner-img {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+.inner-img:hover {
+  transform: scale(1.15);
+}
+
+/* Other styling elements, that are not necessary for the example */
+
+// .img-wrapper {
+//   display: inline-block;
+//   box-sizing: border-box;
+// }
