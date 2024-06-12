@@ -10,14 +10,16 @@
   width: fit-content;
   &_name,
   &_email,
-  &_message {
+  &_message,
+  &_button {
     padding: 1rem;
 
     label {
       display: block;
       margin-bottom: 3px;
     }
-    input {
+    input,
+    button {
       padding: 0.8rem;
       border: 0.1rem solid rgb(120, 120, 120);
       border-radius: 0.5rem;
