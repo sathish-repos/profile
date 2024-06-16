@@ -26,10 +26,14 @@
   height: 100%;
 
   @media (max-width: 600px) {
-    width: 350px;
+    width: 375px;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
+    width: 300px;
+  }
+
+  @media (max-width: 350px) {
     width: 250px;
   }
 }
