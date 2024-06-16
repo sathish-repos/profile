@@ -4,7 +4,11 @@
     Feel free to reach out for projects, collaborations, or just to say hello!
     Currently seeking new opportunities.
   </p>
-  <p [cdkCopyToClipboard]="'me.sathish.git@gmail.com'" (click)="onCopy()">
+  <p
+    class="email"
+    [cdkCopyToClipboard]="'me.sathish.git@gmail.com'"
+    (click)="onCopy()"
+  >
     {{ email }}
     <svg
       xmlns="http://www.w3.org/2000/svg"

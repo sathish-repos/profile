@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'skp-footer',
@@ -9,5 +8,17 @@ import { environment } from '../../../../environments/environment';
   styleUrl: './footer.component.scss',
 })
 export class FooterComponent {
-  version: number = environment.Version;
+  downloadResume() {
+    const resumeUrl =
+      'https://sathish-repos.github.io/assets/pdfs/resume/resume.pdf';
+
+    const link = document.createElement('a');
+    link.target = '_blank';
+    link.href = resumeUrl;
+
+    document.body.appendChild(link);
+    link.click();
+
+    document.body.removeChild(link);
+  }
 }
