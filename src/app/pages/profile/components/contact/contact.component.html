@@ -1,27 +1,27 @@
 <div class="card">
   <h1>Let's get to know 😎</h1>
-  <form class="field" [formGroup]="contactForm" (ngSubmit)="onFormSubmit()">
+  <form
+    class="field"
+    target="_blank"
+    action="https://formsubmit.co/771af1b7b6bfb9a775fe5447b943c6e9"
+    method="post"
+  >
     <div>
       <div class="field_name">
         <label for="name">Name</label>
-        <input type="text" [formControlName]="'name'" name="name" id="name" />
+        <input type="text" name="name" placeholder="Full Name" required />
       </div>
       <div class="field_email">
         <label for="email"> Email </label>
-        <input
-          type="email"
-          [formControlName]="'email'"
-          name="email"
-          id="email"
-        />
+        <input type="email" name="email" placeholder="Email Address" required />
       </div>
       <div class="field_message">
         <label for="message">Message</label>
         <input
           type="text"
-          [formControlName]="'message'"
           name="message"
-          id="message"
+          placeholder="Enter your message"
+          required
         />
       </div>
       <div class="field_button">
