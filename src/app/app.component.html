@@ -1,4 +1,6 @@
-<skp-header />
+@if (content$ | async; as content) {
+<skp-header [content]="content.header" />
 <router-outlet />
 <skp-theme />
-<skp-footer />
+<skp-footer [content]="content.footer" />
+}

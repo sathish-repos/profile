@@ -1,5 +1,7 @@
+@if (content()) {
 <div class="nav">
-  <a class="nav__item" routerLink="/">Sathishkumar.dev</a>
-  <a class="nav__item" routerLink="about">About</a>
+  <a class="nav__item" routerLink="/" [innerHTML]="content().logo"></a>
+  <a class="nav__item" routerLink="about" [innerHTML]="content().about"></a>
 </div>
 <div class="section"></div>
+}

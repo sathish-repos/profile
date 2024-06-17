@@ -1,22 +1,13 @@
+@if (content()) {
 <div class="education">
-  <h4>Education</h4>
+  <h4 [innerHTML]="content().title"></h4>
+  @for (education of content().educations; track $index) {
   <div class="item">
-    <p>Bachelor of Engineering</p>
-    <p>Computer Science and Engineering</p>
-    <p>From: TCET</p>
-    <p>2017-2021</p>
-    <p>76.5%</p>
+    <p [innerHTML]="education.study"></p>
+    <p [innerHTML]="education.from"></p>
+    <p [innerHTML]="education.year"></p>
+    <p [innerHTML]="education.score"></p>
   </div>
-  <div class="item">
-    <p>Higher Sec School</p>
-    <p>From: Govt. Hrs School</p>
-    <p>2015-2017</p>
-    <p>87.25%</p>
-  </div>
-  <div class="item">
-    <p>High School</p>
-    <p>From: Govt. High School</p>
-    <p>2015-2017</p>
-    <p>76.6%</p>
-  </div>
+  }
 </div>
+}

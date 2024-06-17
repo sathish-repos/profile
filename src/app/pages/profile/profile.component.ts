@@ -5,12 +5,12 @@ import { AppsComponent } from './components/apps/apps.component';
 import { ContentService } from '../../shared/services/content.service';
 import { ProfileContent } from './models/profile.interfaces';
 import { Observable } from 'rxjs';
-import { CommonModule } from '@angular/common';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'skp-profile',
   standalone: true,
-  imports: [CommonModule, HeroComponent, ContactComponent, AppsComponent],
+  imports: [AsyncPipe, HeroComponent, ContactComponent, AppsComponent],
   templateUrl: './profile.component.html',
   styleUrl: './profile.component.scss',
 })
