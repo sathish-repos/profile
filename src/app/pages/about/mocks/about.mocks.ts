@@ -4,6 +4,7 @@ import {
   DescriptionSection,
   DisciplinesSection,
   EducationSection,
+  ExperiencesSection,
 } from '../models/about.model';
 
 export const ContactSectionMocks: ContactSection = {
@@ -84,9 +85,35 @@ export const EducationSectionMocks: EducationSection = {
   ],
 };
 
+export const ExperiencesSectionMocks: ExperiencesSection = {
+  title: 'Work Experiences',
+  experiences: [
+    {
+      job_title: 'System Engineer',
+      place: `&#64;TCS`,
+      year: '2022-Present',
+      highlights: {
+        label: 'Project Highlights:',
+        items: [
+          `Led the development of a feature-rich e-commerce platform, enhancing
+        user experience and increasing conversion rates by 20%.`,
+          `
+          Implemented a real-time analytics dashboard using Angular and NgRx,
+        providing actionable insights and improving decision-making processes.
+        `,
+          `Collaborated on a cross-functional team to integrate multiple micro
+        front-ends into a cohesive enterprise application, streamlining workflow
+        efficiency.`,
+        ],
+      },
+    },
+  ],
+};
+
 export const AboutContentMocks: AboutContent = {
   contact: ContactSectionMocks,
   description: DescriptionSectionMocks,
   disciplines: DisciplinesSectionMocks,
   educations: EducationSectionMocks,
+  experiences: ExperiencesSectionMocks,
 };

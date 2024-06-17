@@ -37,9 +37,25 @@ export type EducationSection = {
   educations: Educations[];
 };
 
+export type Experiences = {
+  job_title: string;
+  place: string;
+  year: string;
+  highlights: {
+    label: string;
+    items: string[];
+  };
+};
+
+export type ExperiencesSection = {
+  title: string;
+  experiences: Experiences[];
+};
+
 export type AboutContent = {
   contact: ContactSection;
   description: DescriptionSection;
   disciplines: DisciplinesSection;
   educations: EducationSection;
+  experiences: ExperiencesSection;
 };

@@ -18,6 +18,8 @@ export class ContentService {
   }
 
   getAboutContent(): Observable<AboutContent> {
-    return of(AboutContentMocks);
+    return this.http.get<AboutContent>(
+      'https://sathish-repos.github.io/assets/aem/profile/about-page.json'
+    );
   }
 }

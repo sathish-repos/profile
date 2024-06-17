@@ -1,7 +1,7 @@
 @if (content$ | async; as content) {
 <div class="about">
   <skp-description [content]="content.description" />
-  <skp-experiences />
+  <skp-experiences [content]="content.experiences" />
   <skp-education [content]="content.educations" />
   <skp-disciplines [content]="content.disciplines" />
   <skp-contact [content]="content.contact" />

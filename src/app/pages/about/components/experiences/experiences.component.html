@@ -1,28 +1,18 @@
+@if (content()) {
 <div class="experiences">
-  <h4>Work Experiences</h4>
-  <h5>System Engineer</h5>
-  <p>&#64;TCS</p>
-  <p>2022-Present</p>
-  <h6>Project Highlights:</h6>
+  <h4 [innerHTML]="content().title"></h4>
+  @for (experience of content().experiences; track $index) {
+  <h5 [innerHTML]="experience.job_title"></h5>
+  <p [innerHTML]="experience.place"></p>
+  <p [innerHTML]="experience.year"></p>
+  <h6 [innerHTML]="experience.highlights.label"></h6>
   <ol>
+    @for (item of experience.highlights.items; track $index) {
     <li>
-      <p>
-        Led the development of a feature-rich e-commerce platform, enhancing
-        user experience and increasing conversion rates by 20%.
-      </p>
+      <p [innerHTML]="item"></p>
     </li>
-    <li>
-      <p>
-        Implemented a real-time analytics dashboard using Angular and NgRx,
-        providing actionable insights and improving decision-making processes.
-      </p>
-    </li>
-    <li>
-      <p>
-        Collaborated on a cross-functional team to integrate multiple micro
-        frontends into a cohesive enterprise application, streamlining workflow
-        efficiency.
-      </p>
-    </li>
+    }
   </ol>
+  }
 </div>
+}
