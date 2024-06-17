@@ -1,7 +1,8 @@
+@if (content()) {
 <div class="footer">
-  <div class="copyright">© Sathishkumar 2024</div>
+  <div class="copyright" [innerHTML]="content().copyright"></div>
   <div class="resume" (click)="downloadResume()">
-    <span>Resume</span>
+    <span [innerHTML]="content().resume.label"></span>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="18"
@@ -20,3 +21,4 @@
     </svg>
   </div>
 </div>
+}

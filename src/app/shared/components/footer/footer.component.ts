@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { FooterSection } from '../../models/shared.interfaces';
 
 @Component({
   selector: 'skp-footer',
@@ -8,13 +9,12 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.scss',
 })
 export class FooterComponent {
-  downloadResume() {
-    const resumeUrl =
-      'https://sathish-repos.github.io/assets/pdfs/resume/resume.pdf';
+  content = input.required<FooterSection>();
 
+  downloadResume() {
     const link = document.createElement('a');
     link.target = '_blank';
-    link.href = resumeUrl;
+    link.href = this.content().resume.url;
 
     document.body.appendChild(link);
     link.click();
