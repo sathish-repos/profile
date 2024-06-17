@@ -3,6 +3,7 @@ import {
   ContactSection,
   DescriptionSection,
   DisciplinesSection,
+  EducationSection,
 } from '../models/about.model';
 
 export const ContactSectionMocks: ContactSection = {
@@ -59,8 +60,33 @@ export const DisciplinesSectionMocks: DisciplinesSection = {
   ],
 };
 
+export const EducationSectionMocks: EducationSection = {
+  title: 'Education',
+  educations: [
+    {
+      study: 'B.E Computer Science and Engineering',
+      from: 'From: TCET',
+      year: '2017-2021',
+      score: '76.5%',
+    },
+    {
+      study: 'Higher Sec School',
+      from: 'From: Govt. Hrs School',
+      year: '2015-2017',
+      score: '87.25%',
+    },
+    {
+      study: 'High School',
+      from: 'From: Govt. High School',
+      year: '2015-2017',
+      score: '76.6%',
+    },
+  ],
+};
+
 export const AboutContentMocks: AboutContent = {
   contact: ContactSectionMocks,
   description: DescriptionSectionMocks,
   disciplines: DisciplinesSectionMocks,
+  educations: EducationSectionMocks,
 };

@@ -25,8 +25,21 @@ export type DisciplinesSection = {
   disciplines: string[];
 };
 
+export type Educations = {
+  study: string;
+  from: string;
+  year: string;
+  score: string;
+};
+
+export type EducationSection = {
+  title: string;
+  educations: Educations[];
+};
+
 export type AboutContent = {
   contact: ContactSection;
   description: DescriptionSection;
   disciplines: DisciplinesSection;
+  educations: EducationSection;
 };
