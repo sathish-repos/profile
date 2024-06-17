@@ -1,14 +1,8 @@
+@if (content()) {
 <div class="contact">
-  <h4>Contact</h4>
-  <p>
-    Feel free to reach out for projects, collaborations, or just to say hello!
-    Currently seeking new opportunities.
-  </p>
-  <p
-    class="email"
-    [cdkCopyToClipboard]="'me.sathish.git@gmail.com'"
-    (click)="onCopy()"
-  >
+  <h4 [innerHTML]="content().title"></h4>
+  <p [innerHTML]="content().description"></p>
+  <p class="email" [cdkCopyToClipboard]="content().email.id" (click)="onCopy()">
     {{ email }}
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -28,8 +22,8 @@
       <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
     </svg>
   </p>
-  <a href="tel:{{ phoneNo }}"
-    >Ph No.: {{ phoneNo }}
+  <a href="tel:{{ content().phoneNo.number }}"
+    >{{ content().phoneNo.label + " " + content().phoneNo.number }}
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="20"
@@ -47,3 +41,4 @@
     </svg>
   </a>
 </div>
+}

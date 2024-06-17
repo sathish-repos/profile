@@ -8,6 +8,16 @@
   margin-right: auto;
 }
 
+h1 {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  @media (max-width: 767px) {
+    padding: 20px;
+  }
+}
+
 .app {
   margin-bottom: 5rem;
 }
@@ -45,6 +55,7 @@
 
 .inner-img:hover {
   transform: scale(1.15);
+  cursor: pointer;
 }
 
 /* Other styling elements, that are not necessary for the example */
