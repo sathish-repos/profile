@@ -2,6 +2,7 @@ import {
   AboutContent,
   ContactSection,
   DescriptionSection,
+  DisciplinesSection,
 } from '../models/about.model';
 
 export const ContactSectionMocks: ContactSection = {
@@ -44,7 +45,22 @@ export const DescriptionSectionMocks: DescriptionSection = {
   },
 };
 
+export const DisciplinesSectionMocks: DisciplinesSection = {
+  title: 'Disciplines',
+  disciplines: [
+    'Front-End',
+    'RxJs',
+    'NgRX',
+    'Bootstrap',
+    'Figma',
+    'PostMan',
+    'Firebase',
+    'Github',
+  ],
+};
+
 export const AboutContentMocks: AboutContent = {
   contact: ContactSectionMocks,
   description: DescriptionSectionMocks,
+  disciplines: DisciplinesSectionMocks,
 };

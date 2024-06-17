@@ -20,7 +20,13 @@ export type DescriptionSection = {
   };
 };
 
+export type DisciplinesSection = {
+  title: string;
+  disciplines: string[];
+};
+
 export type AboutContent = {
   contact: ContactSection;
   description: DescriptionSection;
+  disciplines: DisciplinesSection;
 };
