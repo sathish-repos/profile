@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { CdkCopyToClipboard } from '@angular/cdk/clipboard';
+import { ContactSection } from '../../models/about.model';
 
 @Component({
   selector: 'skp-contact',
@@ -9,12 +10,12 @@ import { CdkCopyToClipboard } from '@angular/cdk/clipboard';
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
-  email: string = 'me.sathish.git@gmail.com';
-  phoneNo: string = '6380891338';
+  content = input.required<ContactSection>();
+  email = this.content().email.id;
 
   onCopy() {
     setInterval(() => {
-      this.email = 'me.sathish.git@gmail.com';
+      this.email = this.content().email.id;
     }, 1000);
     this.email = 'Copied !!';
   }

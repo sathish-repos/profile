@@ -6,6 +6,8 @@ import {
   EducationComponent,
   ExperiencesComponent,
 } from './components';
+import { AboutContent } from './models/about.model';
+import { AboutContentMocks } from './mocks/about.mocks';
 
 @Component({
   selector: 'skp-about',
@@ -20,4 +22,6 @@ import {
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss',
 })
-export default class AboutComponent {}
+export default class AboutComponent {
+  content: AboutContent = AboutContentMocks;
+}
