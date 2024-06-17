@@ -1,9 +1,13 @@
 <div class="profile">
-  <skp-hero />
-</div>
-<div class="apps">
-  <skp-apps />
-</div>
-<div class="contact">
-  <!-- <skp-contact /> -->
+  @if (content$ | async; as content) {
+  <div class="profile">
+    <skp-hero [content]="content.hero" />
+  </div>
+  <div class="apps">
+    <skp-apps [content]="content.apps" />
+  </div>
+  <div class="contact">
+    <!-- <skp-contact /> -->
+  </div>
+  }
 </div>

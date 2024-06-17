@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { AppsSection } from '../../models/profile.interfaces';
 
 @Component({
   selector: 'skp-apps',
@@ -8,57 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './apps.component.scss',
 })
 export class AppsComponent {
-  content = {
-    title: 'Projects',
-    appsList: [
-      {
-        name: 'Todo',
-        description: 'Its an todo application with firebase as a backend',
-        imageUrl: {
-          mobile: 'assets/app-2.webp',
-          desktop: 'assets/todo.png',
-        },
-        link: {
-          url: 'https://todo-firebase-123.web.app/',
-          target: '_blank',
-        },
-      },
-      {
-        name: 'Todo',
-        description: 'Its an todo application with firebase as a backend',
-        imageUrl: {
-          mobile: 'assets/app-2.webp',
-          desktop: 'assets/todo.png',
-        },
-        link: {
-          url: 'https://todo-firebase-123.web.app/',
-          target: '_blank',
-        },
-      },
-      {
-        name: 'Todo',
-        description: 'Its an todo application with firebase as a backend',
-        imageUrl: {
-          mobile: 'assets/app-2.webp',
-          desktop: 'assets/todo.png',
-        },
-        link: {
-          url: 'https://todo-firebase-123.web.app/',
-          target: '_blank',
-        },
-      },
-      {
-        name: 'Todo',
-        description: 'Its an todo application with firebase as a backend',
-        imageUrl: {
-          mobile: 'assets/app-2.webp',
-          desktop: 'assets/todo.png',
-        },
-        link: {
-          url: 'https://todo-firebase-123.web.app/',
-          target: '_blank',
-        },
-      },
-    ],
-  };
+  content = input.required<AppsSection>();
 }

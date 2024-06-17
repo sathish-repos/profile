@@ -1,6 +1,6 @@
-<h1 [innerHTML]="content.title"></h1>
+<h1 [innerHTML]="content().title"></h1>
 <div class="all__apps">
-  @for (app of content.appsList; track $index) {
+  @for (app of content().appsList; track $index) {
   <div class="app">
     <div class="img-wrapper">
       <a href="{{ app.link.url }}" target="{{ app.link.target }}">
