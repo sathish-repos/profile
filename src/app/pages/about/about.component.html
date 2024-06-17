@@ -1,4 +1,4 @@
-@if (content) {
+@if (content$ | async; as content) {
 <div class="about">
   <skp-description />
   <skp-experiences />
