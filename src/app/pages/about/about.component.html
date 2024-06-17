@@ -1,6 +1,6 @@
 @if (content$ | async; as content) {
 <div class="about">
-  <skp-description />
+  <skp-description [content]="content.description" />
   <skp-experiences />
   <skp-education />
   <skp-disciplines />

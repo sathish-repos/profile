@@ -11,6 +11,16 @@ export type ContactSection = {
   };
 };
 
+export type DescriptionSection = {
+  title: string;
+  description: string[];
+  profile: {
+    imageUrl: string;
+    altText: string;
+  };
+};
+
 export type AboutContent = {
   contact: ContactSection;
+  description: DescriptionSection;
 };
