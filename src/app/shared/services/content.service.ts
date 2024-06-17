@@ -11,7 +11,7 @@ export class ContentService {
 
   getProfileContent(): Observable<ProfileContent> {
     return this.http.get<ProfileContent>(
-      'assets/aem-content/profile-page.json'
+      'https://sathish-repos.github.io/assets/aem/profile/profile-page.json'
     );
   }
 }
